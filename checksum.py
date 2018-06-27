@@ -31,7 +31,6 @@ try:
             if not data:
                 break
             parser.update(data)
+    print(parser.hexdigest())
 except:
     print("checksum failure")
-
-print(parser.hexdigest())
